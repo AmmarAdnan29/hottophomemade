@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drinks - HotTop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <img src="../foodimages/brandimg.jpg" class="main-logo" alt="Logo">
+ 
+  <div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="main-course.html">Main Course</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="burgers.html">Burgers</a> 
+    <a href="appetizers.html">Appetizers</a>
+    <a href="https://discord.gg/RvAbPGnbFj" target="_blank">Discord</a>
+  </div>
+
+  <div class="content">
+    <h1>Drinks</h1>
+
+    <!-- Next Cola -->
+    <div class="product-card">
+      <img src="../foodimages/nextcola.jpg" alt="Next Cola" />
+      <h3>Next Cola</h3>
+      <p>Price: Rs. 150</p>
+      <button onclick="showOrderPopup('Next Cola', 150)">Buy Now</button>
+    </div>
+
+    <!-- Gourmet Malta -->
+    <div class="product-card">
+      <img src="../foodimages/gourmetmalta.png" alt="Gourmet Malta" />
+      <h3>Gourmet Malta</h3>
+      <p>Price: Rs. 120</p>
+      <button onclick="showOrderPopup('Gourmet Malta', 120)">Buy Now</button>
+    </div>
+
+    <!-- Gourmet Lemon Up -->
+    <div class="product-card">
+      <img src="../foodimages/gourmetlemonup.png" alt="Gourmet Lemon Up" />
+      <h3>Gourmet Lemon Up</h3>
+      <p>Price: Rs. 130</p>
+      <button onclick="showOrderPopup('Gourmet Lemon Up', 130)">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="order-popup" id="orderPopup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closeOrderPopup()">&times;</span>
+    <h2 id="popupItemName">Item Name</h2>
+    <p id="popupPrice">The Item Price: Rs. 0</p>
+    <p>To ORDER: <strong>0300-0000000</strong></p>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
