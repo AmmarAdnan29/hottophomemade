@@ -219,3 +219,12 @@ body {
   border-radius: 16px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
+
+/* Styling for the deals image */
+.dealsimg {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
