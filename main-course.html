@@ -3,48 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Main Course - HotTop</title>
+  <title>HotTop Homemade - Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <img src="foodimages/brandimg.jpg" class="main-logo" alt="Logo">
 
-  <div class="sidebar">
-    <a href="index.html">Home</a>
-    <a href="main-course.html">Main Course</a>
-    <a href="drinks.html">Drinks</a>
-    <a href="burgers.html">Burgers</a>
-    <a href="appetizers.html">Appetizers</a>
-    <a href="https://discord.gg/RvAbPGnbFj" target="_blank">Discord</a>
-  </div>
 
-  <div class="content">
-    <h1>Main Course</h1>
+  <script>
+    function toggleContactBox() {
+      const box = document.getElementById("contactBox");
+      box.style.display = box.style.display === "none" ? "block" : "none";
+    }
+  </script>
+<img src="../foodimages/brandimg.jpg" class="main-logo" alt="Logo">
 
-    <div class="product-card">
-      <img src="foodimages/chickenbirani.jpg" alt="cickenBiryani" />
-      <h3>Chicken Biryani</h3>
-      <p>Price: Rs. 300</p>
-      <button onclick="showOrderPopup('Chicken Biryani', 300)">Buy Now</button>
-    </div>
-  <div>
-  <div class="product-card">
-    <img src="foodimages/chickenkarai.jpg" alt="cickenkarai" />
-    <h3>Chicken karai</h3>
-    <p>Price: Rs. 300</p>
-    <button onclick="showOrderPopup('Chicken Karai', 300)">Buy Now</button>
-  </div>
+<div class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="main-course.html">Main Course</a>
+  <a href="drinks.html">Drinks</a>
+  <a href="burgers.html">Burgers</a>
+  <a href="appetizers.html">Appetizers</a>
+  <a href="deals.html">Deals</a>
+  <a href="https://discord.gg/RvAbPGnbFj" target="_blank">Discord</a>
 </div>
 
-  <div class="order-popup" id="orderPopup">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closeOrderPopup()">&times;</span>
-      <h2 id="popupItemName">Item Name</h2>
-      <p id="popupPrice">The Item Price: Rs. 0</p>
-      <p>To ORDER: <strong>0300-0000000</strong></p>
+
+  <div class="content">
+    <h1>Welcome to HotTop HomeMade 🍔</h1>
+    
+
+    <!-- Ayat Section -->
+    <div class="ayat-section">
+      <p class="ayat">بِسْمِ اللَّهِ الَّذِي لاَ يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الأَرْضِ وَلاَ فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ ثَلاَثَ مَرَّاتٍ فَيَضُرُّهُ شَيْءٌ “</p>
+      <p class="translation">” In the Name of Allah, who with His Name, nothing in the earth or the heavens can cause harm, and He is the Hearing, the Knowing.”</p>
     </div>
   </div>
+  <div class="about-section">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About HotTop Homemade</h2>
+        <p>
+          At HotTop Homemade, every dish tells a story of tradition, warmth, and passion.
+          We bring you the true essence of homemade food — fresh ingredients, authentic flavors,
+          and a pinch of love in every bite. Whether you're dining in or taking away, our goal is
+          to give you that comforting, homemade feel — every time.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="../foodimages/aboutphoto.png" alt="Homemade Dish">
+      </div>
+    </div>
+  </div>
+  
 
-  <script src="script.js"></script>
+  
+  
 </body>
 </html>
