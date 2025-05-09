@@ -8,4 +8,4 @@ function showOrderPopup(name, price) {
     document.getElementById('orderPopup').style.display = 'none';
   }
   
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
